@@ -4,6 +4,7 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 Find the largest palindrome made from the product of two 3-digit numbers.
 
 Answer = 906609
+RunTime = <1 second
 */
 
 let start = new Date();
@@ -23,9 +24,9 @@ for (let i = 0; i <= 999; i++) {
 				biggest = i * j;
 				bigI = i;
 				bigJ = j;
-				console.log("c = " + biggest);
-				console.log("BigI = " + bigI);
-				console.log("BigJ = " + bigJ);
+				//console.log("c = " + biggest);
+				//console.log("BigI = " + bigI);
+				//console.log("BigJ = " + bigJ);
 			}
 		}
 	}
@@ -34,3 +35,5 @@ for (let i = 0; i <= 999; i++) {
 console.log("Final Answer = " + biggest);
 console.log("BigI = " + bigI);
 console.log("BigJ = " + bigJ);
+
+console.log((new Date() - start) / 1000);
